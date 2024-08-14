@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1E1E1E; /* Dark Gray background */
+      color: #FFFFFF; /* White text color */
+    }
+    .navbar {
+      background-color: #1E1E1E; /* Dark Gray background */
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #FFFFFF; /* White text color */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #FFFFFF; /* White background on hover */
+      color: #1E1E1E; /* Dark Gray text color on hover */
+    }
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #FFFFFF; /* White text color */
+    }
+    .form-container {
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      border: 2px solid #1E1E1E; /* Dark Gray border color */
+      border-radius: 8px;
+      background-color: #1E1E1E; /* Same Dark Gray background as body */
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #FFFFFF; /* White text color */
+    }
+    .form-container input[type="text"] {
+      width: 80%; /* Adjusted width of input text box */
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 2px solid #1E1E1E; /* Dark Gray border color for input */
+      border-radius: 4px;
+      background-color: #FFFFFF; /* White background for input */
+      color: #000000; /* Black text color for input */
+      max-width: 400px; /* Optional: limit maximum width */
+    }
+    .form-container input[type="submit"] {
+      background-color: #000000; /* Black background */
+      color: #FFFFFF; /* White text color */
+      border: 2px solid #000000; /* Black border color for submit button */
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-container input[type="submit"]:hover {
+      background-color: #FFFFFF; /* White background on hover */
+      color: #000000; /* Black text color on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="container">
+    <h1>Movie Recommendation System</h1>
+    
+    <div class="form-container">
+      <form action="/submit-form" method="post">
+        <label for="movie-type">What is your favorite movie or movie type?</label>
+        <input type="text" id="movie-type" name="movie-type" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
